@@ -238,7 +238,7 @@ footer {
   }
 
   section {
-    padding: 15px;
+    padding: 1px;
   }
 
   .departamentos-rect {
@@ -302,5 +302,55 @@ footer {
   #pando {
     left: 20% !important;
   }
+  .carrusel-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.carrusel {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50%; /* altura = 50% del ancho */
+  height: 0;           /* se controla con padding */
+}
+
+.slides img {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 50% !important;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  object-fit: cover;
+  transform: none !important;
+}
+
+.slides img {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 50% !important; /* que llene todo el contenedor */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  object-fit: cover;
+  transform: none !important;
+}
+
+.slides img.active {
+  opacity: 1;
+  position: absolute !important;
+}
+.departamentos-rect {
+  margin-top: -280px; /* sube la sección de info 20px sobre el espacio original */
+  position: relative;
+  z-index: 1;
+}
+
 }
 
