@@ -347,7 +347,7 @@ footer {
   position: absolute !important;
 }
 .departamentos-rect {
-  margin-top: -280px; /* sube la sección de info 20px sobre el espacio original */
+  margin-top: -281px; /* sube la sección de info 20px sobre el espacio original */
   position: relative;
   z-index: 1;
 }
