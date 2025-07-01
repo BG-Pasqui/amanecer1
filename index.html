@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Descubre Bolivia - Turismo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER con logo y navegación -->
+  <header>
+    <div class="logo">
+      <img src="resources/logo turismo.png" alt="Logo Empresa" />
+      <h2></h2>
+    </div>
+    <!-- NAV con enlaces funcionales sin 'Contacto' -->
+<nav>
+  <a href="inicio.html">Inicio</a>
+  <a href="destinos.html">Destinos</a>
+  <a href="paquetes.html">Paquetes</a>
+</nav>
+  </header>
+
+  <!-- VIDEO de presentación -->
+  <section class="video-section">
+    <video autoplay muted loop>
+      <source src="resources/turismo amanecer.mp4" type="video/mp4" />
+      Tu navegador no soporta videos HTML5.
+    </video>
+  </section>
+
+  <section class="departamentos-rect">
+
+    <div class="fila" onclick="toggleInfo(this)">
+      <img src="resources/la paz.jpg" alt="La Paz" />
+      <div class="info">
+        <h3>La Paz</h3>
+        <p>La Paz se encuentra a más de 3.600 metros sobre el nivel del mar, rodeada de montañas nevadas. Es una ciudad vibrante donde conviven lo moderno y lo tradicional. Sus calles empinadas, mercados populares y una red de teleféricos única en el mundo la convierten en un lugar fascinante para explorar. Es también centro político, cultural y social del país, con una vida nocturna activa, museos, arquitectura colonial y fuerte presencia indígena.</p>  
+              <div class="mas-info">
+          <p>La Paz es el epicentro cultural de Bolivia, con una rica tradición aymara y mestiza reflejada en sus danzas, vestimenta y celebraciones como el Gran Poder. Su gastronomía incluye platos como el fricasé, chairo y salteñas. La naturaleza circundante permite explorar el Valle de la Luna o ascender al Huayna Potosí. En cuanto a aventura, el Camino de la Muerte es uno de los senderos ciclísticos más famosos del mundo.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila reverse" onclick="toggleInfo(this)">
+      <img src="resources/cochabamba.jpg" alt="Cochabamba" />
+      <div class="info">
+        <h3>Cochabamba</h3>
+        <p>Cochabamba está ubicada en un valle fértil con un clima primaveral durante todo el año. Es conocida por su excelente gastronomía, plazas llenas de vida y un ambiente relajado. El Cristo de la Concordia, una imponente estatua sobre un cerro, ofrece vistas panorámicas de la ciudad. También destaca por su cultura joven, mercados dinámicos y el orgullo regional de su comida tradicional.</p>
+        <div class="mas-info">
+          <p>Cochabamba es famosa por su espíritu alegre y su devoción a la Virgen de Urkupiña. Su cultura combina modernidad y tradición. Es considerada la capital gastronómica de Bolivia, con delicias como el silpancho y el pique macho. Rodeada de montañas y campos agrícolas, ofrece contacto con la naturaleza en el Parque Tunari. La aventura se vive en sus senderos, miradores y deportes extremos.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila" onclick="toggleInfo(this)">
+      <img src="resources/santacruz.png" alt="Santa Cruz" />
+      <div class="info">
+        <h3>Santa Cruz</h3>
+        <p>Santa Cruz de la Sierra es una ciudad cálida, moderna y cosmopolita. Su economía en constante crecimiento ha convertido a esta ciudad en uno de los centros empresariales más importantes de Bolivia. Cuenta con parques urbanos, centros comerciales, restaurantes de primer nivel y una vida nocturna muy activa. Además, su cercanía a la naturaleza ofrece escapadas a parques ecológicos y reservas tropicales.</p>
+        <div class="mas-info">
+          <p>Santa Cruz destaca por su identidad camba, fiestas regionales como el carnaval cruceño y su acento distintivo. Su gastronomía tropical incluye majadito, locro y jugos exóticos. Es rica en biodiversidad, con acceso a parques como Amboró y Noel Kempff. Para los aventureros, hay actividades como canopy, senderismo y exploración de cavernas en Samaipata.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila reverse" onclick="toggleInfo(this)">
+      <img src="resources/oruro.jpg" alt="Oruro" />
+      <div class="info">
+        <h3>Oruro</h3>
+        <p>Oruro es una ciudad con alma minera y raíces profundas en la tradición andina. Cada año celebra uno de los carnavales más importantes de Sudamérica, declarado Patrimonio de la Humanidad por la UNESCO. Además de su colorido folclore, Oruro ofrece historia, devoción y paisajes altiplánicos impresionantes. Sus minas y templos reflejan la historia del trabajo duro y la fe popular.</p>
+        <div class="mas-info">
+          <p>Oruro es sinónimo de folklore gracias a su famoso Carnaval, donde se celebra la cultura diablada y morenada. Su cocina incluye charquekan y caldo de cardán. En cuanto a naturaleza, destacan el Sajama (el nevado más alto de Bolivia) y los paisajes altiplánicos. Para los más atrevidos, se puede escalar, explorar las minas o visitar geisers y termas naturales.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila" onclick="toggleInfo(this)">
+      <img src="resources/potosi.jpg" alt="Potosí" />
+      <div class="info">
+        <h3>Potosí</h3>
+        <p>Potosí es una ciudad histórica que fue una de las más ricas del mundo durante la época colonial gracias a la extracción de plata del Cerro Rico. Sus calles conservan edificios coloniales, iglesias barrocas y museos que relatan la historia de la minería y la opresión. Es un lugar donde se siente el peso de la historia y la resiliencia de su gente.</p>
+        <div class="mas-info">
+          <p>Potosí conserva una cultura minera muy arraigada. Las tradiciones están marcadas por su pasado colonial. La gastronomía se basa en platos energéticos como ají de patas y sopaipillas. Rodeada de montañas y lagunas, ofrece paisajes de altura únicos. La aventura se encuentra en tours por el Cerro Rico, donde aún se puede ver el trabajo de los mineros.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila reverse" onclick="toggleInfo(this)">
+      <img src="resources/chuquisaca.webp" alt="Chuquisaca" />
+      <div class="info">
+        <h3>Chuquisaca</h3>
+        <p>Sucre es conocida como la ciudad blanca por sus casonas coloniales encaladas y sus calles adoquinadas. Es el lugar donde nació la independencia de Bolivia y alberga importantes edificios históricos como la Casa de la Libertad. Además, su ambiente universitario, museos y clima agradable hacen de Sucre una ciudad acogedora, ideal para aprender y disfrutar de la historia y la cultura.</p>
+        <div class="mas-info">
+          <p>Chuquisaca brilla por su legado cultural: fue cuna de la independencia. Las tradiciones están vivas en su música, danzas y arquitectura. Su cocina incluye mondongo, chorizos chuquisaqueños y platos coloniales. La naturaleza se revela en zonas como Yotala y Maragua. En aventura, destaca el trekking por cráteres, huellas de dinosaurio y excursiones rurales.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila" onclick="toggleInfo(this)">
+      <img src="resources/tarija.webp" alt="Tarija" />
+      <div class="info">
+        <h3>Tarija</h3>
+        <p>Tarija se encuentra al sur de Bolivia y destaca por sus valles soleados, sus vinos y su ritmo de vida tranquilo. Es el principal productor de vino del país, con rutas enoturísticas y bodegas que ofrecen experiencias inolvidables. Además, su gente amable, su cocina regional y sus paisajes verdes la convierten en un destino perfecto para descansar y disfrutar.</p>
+        <div class="mas-info">
+          <p>Tarija posee una rica herencia colonial y mestiza. La hospitalidad de su gente se refleja en sus festivales. Es capital del vino y singani, con rutas de degustación únicas. Rodeada de viñedos, ríos y colinas, es perfecta para el ecoturismo. En aventura, puedes hacer ciclismo de montaña, rafting y recorridos por el Cañón del Pilaya.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila reverse" onclick="toggleInfo(this)">
+      <img src="resources/beni.jpg" alt="Beni" />
+      <div class="info">
+        <h3>Beni</h3>
+        <p>Beni es un departamento con vastos ríos, pampas y selvas tropicales. Su geografía permite actividades como la navegación, la pesca y el avistamiento de fauna silvestre. Su capital Trinidad, combina la vida urbana con la cercanía a la naturaleza, y la región está marcada por la cultura moxeña, la hospitalidad de su gente y la tranquilidad de sus paisajes.</p>
+        <div class="mas-info">
+          <p>Beni mantiene vivas sus culturas originarias como los moxeños. Sus fiestas tradicionales incluyen música con maracas y danzas autóctonas. Su gastronomía incluye pescado, yuca y tamales. La selva, ríos y lagunas ofrecen un paraíso natural. Para los aventureros hay paseos en bote, safaris fotográficos y pesca deportiva.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila" onclick="toggleInfo(this)">
+      <img src="resources/pando.jpg" alt="Pando" />
+      <div class="info">
+        <h3>Pando</h3>
+        <p>Pando, el departamento más septentrional de Bolivia, es una joya escondida en la Amazonía. Con extensas áreas verdes, biodiversidad impresionante y comunidades indígenas, es ideal para quienes buscan aventura y ecoturismo. Cobija, su capital, es una ciudad cálida que sirve como base para explorar la selva, los ríos y los paisajes únicos de la región.</p>
+        <div class="mas-info">
+          <p>Pando conserva culturas indígenas como los tacanas y cavineños. Es un departamento multicultural. Su gastronomía se basa en ingredientes amazónicos como plátano, yuca y pescado. Rodeado de selva virgen, es ideal para la observación de flora y fauna. Es un destino de aventura para navegar ríos, recorrer reservas y conocer comunidades rurales.</p>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  
+  
+  
+  <!-- MAPA INTERACTIVO -->
+  <h2>Explora el mapa de Bolivia</h2>
+  <div class="mapa-bolivia">
+    <img src="resources/Bolivia_Blank_Map.svg" alt="Mapa de Bolivia" />
+
+    <button
+      class="btn dpto"
+      id="lapaz"
+      style="top: 47%; left: 31%"
+      onclick="alert('Bienvenido a La Paz, capital administrativa de Bolivia.')"
+    >
+      La Paz
+    </button>
+
+    <button
+      class="btn dpto"
+      id="cochabamba"
+      style="top: 57%; left: 41%"
+      onclick="alert('Cochabamba, conocida como la Ciudad Jardín.')"
+    >
+      Cochabamba
+    </button>
+
+    <button
+      class="btn dpto"
+      id="tarija"
+      style="top: 88%; left: 48%"
+      onclick="alert('Tarija, famosa por sus vinos y clima cálido.')"
+    >
+      Tarija
+    </button>
+
+    <button
+      class="btn dpto"
+      id="santacruz"
+      style="top: 60%; left: 58%"
+      onclick="alert('Santa Cruz, el motor económico del país.')"
+    >
+      Santa Cruz
+    </button>
+
+    <button
+      class="btn dpto"
+      id="chuquisaca"
+      style="top: 79%; left: 48%"
+      onclick="alert('Chuquisaca, donde se encuentra Sucre, la capital constitucional.')"
+    >
+      Chuquisaca
+    </button>
+
+    <button
+      class="btn dpto"
+      id="oruro"
+      style="top: 67%; left: 33%"
+      onclick="alert('Oruro, famosa por su Carnaval declarado Patrimonio de la Humanidad.')"
+    >
+      Oruro
+    </button>
+
+    <button
+      class="btn dpto"
+      id="potosi"
+      style="top: 83%; left: 37%"
+      onclick="alert('Potosí, conocida por el Cerro Rico y su historia minera.')"
+    >
+      Potosí
+    </button>
+
+    <button
+      class="btn dpto"
+      id="beni"
+      style="top: 35%; left: 43%"
+      onclick="alert('Beni, región de grandes ríos y biodiversidad amazónica.')"
+    >
+      Beni
+    </button>
+
+    <button
+      class="btn dpto"
+      id="pando"
+      style="top: 16%; left: 33%"
+      onclick="alert('Pando, el departamento más septentrional y selvático.')"
+    >
+      Pando
+    </button>
+  </div>
+  <footer>
+    <p>© 2025 Descubre Bolivia - Todos los derechos reservados.</p>
+    <p>Contacto: amanecesturimso@gmail.com.com | Tel: +591 64192949, +591 67799186, +591 61122510
+    </p>
+  </footer>
+  <script>
+    function toggleInfo(clickedElement) {
+      const allFilas = document.querySelectorAll(".departamentos-rect .fila");
+  
+      allFilas.forEach(fila => {
+        if (fila !== clickedElement) {
+          fila.classList.remove("active");
+        }
+      });
+  
+      clickedElement.classList.toggle("active");
+    }
+  </script>  
+</body>
+</html>

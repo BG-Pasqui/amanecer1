@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paquetes - Descubre Bolivia</title>
+  <link rel="icon" href="resources/logo.ico" type="image/x-icon">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+  background-color: #00695c;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 130px;
+  width: 380px;
+  padding-left: 35%;
+  cursor: pointer;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #00332d;
+  transform: scale(1.05);
+}
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    h1, h2 {
+      color: #00695c;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .logo {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 100px;
+    width: auto;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    width: auto;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+  
+
+  section {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 15px;
+    text-align: center;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="resources/logo turismo.png" alt="Logo Descubre Bolivia">
+      <h2>Descubre Bolivia</h2>
+    </div>
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="destinos.html">Destinos</a>
+      <a href="paquetes.html">Paquetes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Paquete Andino</h2>
+      <p>Explora La Paz, Oruro y Potosí con un itinerario de 7 días que incluye hospedaje, transporte, guía turístico y visitas a los principales atractivos como el Salar de Uyuni y el teleférico más alto del mundo.</p>
+    </section>
+    <section>
+      <h2>Paquete Selva Viva</h2>
+      <p>Adéntrate en la Amazonía boliviana con un paquete de 5 días en Rurrenabaque, navegando por el río Beni, avistando fauna silvestre y descansando en ecolodges sostenibles.</p>
+    </section>
+    <section>
+      <h2>Paquete Vino y Valle</h2>
+      <p>Relájate en los viñedos de Tarija durante 4 días. Incluye catas de vino, recorridos por bodegas y alojamiento en hospedajes rurales con encanto.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Descubre Bolivia - Todos los derechos reservados.</p>
+    <p>Contacto: amanecesturimso@gmail.com.com | Tel: +591 64192949, +591 67799186, +591 61122510
+  </footer>
+</body>
+</html>
