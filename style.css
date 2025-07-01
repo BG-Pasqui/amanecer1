@@ -196,6 +196,32 @@ footer {
   max-height: 500px; /* altura máxima cuando está abierto */
   margin-top: 10px;
 }
+.carrusel-section {
+  display: flex;
+  justify-content: center;
+}
+
+.carrusel {
+  position: relative;
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slides img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slides img.active {
+  opacity: 1;
+  position: relative;
+}
+
 
 @media (max-width: 768px) {
   /* Centrar el logo */
@@ -314,7 +340,7 @@ footer {
   max-width: 400px;
   position: relative;
   overflow: hidden;
-  padding-bottom: 50%; /* altura = 50% del ancho */
+  padding-bottom: 60%; /* altura = 50% del ancho */
   height: 0;           /* se controla con padding */
 }
 
@@ -323,7 +349,7 @@ footer {
   top: 0;
   left: 0;
   width: 100% !important;
-  height: 50% !important;
+  height: 100% !important;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   object-fit: cover;
@@ -335,7 +361,7 @@ footer {
   top: 0;
   left: 0;
   width: 100% !important;
-  height: 50% !important; /* que llene todo el contenedor */
+  height: 100% !important; /* que llene todo el contenedor */
   opacity: 0;
   transition: opacity 1s ease-in-out;
   object-fit: cover;
@@ -345,11 +371,6 @@ footer {
 .slides img.active {
   opacity: 1;
   position: absolute !important;
-}
-.departamentos-rect {
-  margin-top: -281px; /* sube la sección de info 20px sobre el espacio original */
-  position: relative;
-  z-index: 1;
 }
 
 }

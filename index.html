@@ -38,36 +38,7 @@
       </div>
     </div>
   </section>
-  
-  <style>
-.carrusel-section {
-  display: flex;
-  justify-content: center;
-}
-
-.carrusel {
-  position: relative;
-  width: 900px;
-  height: 600px;
-  overflow: hidden;
-}
-
-.slides img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.slides img.active {
-  opacity: 1;
-  position: relative;
-}
-
-  </style>
-  
+    
   <script>
     const slides = document.querySelectorAll('.slides img');
     let current = 0;
